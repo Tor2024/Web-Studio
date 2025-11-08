@@ -6,10 +6,10 @@
 		"node": ">=22.20.0"
 	},
 	"scripts": {
-		"dev": "react-router dev",
-		"build": "react-router build",
+		"dev": "npx react-router dev",
+		"build": "npx react-router build",
 		"start": "node build/server/index.js",
-		"typecheck": "react-router typegen && tsc --noEmit"
+		"typecheck": "npx react-router typegen && npx tsc --noEmit"
 	},
 	"dependencies": {
 		"@auth/core": "^0.37.2",
