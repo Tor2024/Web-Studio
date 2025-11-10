@@ -2,7 +2,7 @@ services:
   - type: web
     name: create-anything-web
     env: node
-    buildCommand: cd apps/web && npm install --legacy-peer-deps && npm run build
+    buildCommand: cd apps/web && npm install && npm run build
     startCommand: cd apps/web && npm run start
     healthCheckPath: /api/news # Проверка работоспособности API
     envVars:
