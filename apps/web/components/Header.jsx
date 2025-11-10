@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
-import { languages } from "../utils/i18n";
+import { useLanguage } from "../src/context/LanguageContext";
+import { languages } from "../src/utils/i18n";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

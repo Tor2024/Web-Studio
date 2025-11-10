@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import { ArrowRight, Send } from "lucide-react";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage } from "../src/context/LanguageContext";
 
 export default function HomePage() {
   const [isVisible, setIsVisible] = useState(false);
