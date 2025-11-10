@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import AdminList from '../../../src/components/AdminList.jsx';
-import EditorForm from '../../../src/components/EditorForm.jsx';
+import AdminList from '../../components/AdminList.jsx';
+import EditorForm from '../../components/EditorForm.jsx';
 
 export default function AdminPage() {
   const [items, setItems] = useState([]);

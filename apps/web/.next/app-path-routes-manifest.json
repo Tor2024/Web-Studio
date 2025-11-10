@@ -1,0 +1,13 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/news/route": "/api/news",
+  "/api/portfolio/route": "/api/portfolio",
+  "/api/upload/route": "/api/upload",
+  "/api/uploads/route": "/api/uploads",
+  "/admin/page": "/admin",
+  "/contact/page": "/contact",
+  "/page": "/",
+  "/news/page": "/news",
+  "/portfolio/page": "/portfolio",
+  "/about/page": "/about"
+}

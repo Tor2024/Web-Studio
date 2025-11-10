@@ -1,8 +1,12 @@
 
+"use client";
+
 import React, { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import { Calendar, Clock } from "lucide-react";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../src/context/LanguageContext";
+
+export const dynamic = 'force-dynamic';
 
 export default function NewsPage() {
   const [newsItems, setNewsItems] = useState([]);

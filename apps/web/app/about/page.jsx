@@ -1,6 +1,8 @@
 
-import Header from '../../../src/components/Header';
-import { useLanguage } from '../../../src/context/LanguageContext';
+"use client";
+
+import Header from '../../components/Header';
+import { useLanguage } from '../../src/context/LanguageContext';
 
 export default function AboutPage() {
   const { t } = useLanguage();

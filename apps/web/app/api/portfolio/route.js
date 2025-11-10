@@ -1,4 +1,4 @@
-import { getPortfolioItems, addPortfolioItem, updatePortfolioItem, deletePortfolioItem } from '../../../../src/utils/fileStorage.js';
+import { getPortfolioItems, addPortfolioItem, updatePortfolioItem, deletePortfolioItem } from '../../../src/utils/fileStorage.js';
 
 export async function GET() {
   try {

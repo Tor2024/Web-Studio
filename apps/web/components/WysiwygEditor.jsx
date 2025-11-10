@@ -1,5 +1,5 @@
 import { useRef, useEffect, useCallback, useState } from "react";
-import { useUpload } from "../utils/useUpload";
+import { useUpload } from "../src/utils/useUpload";
 
 export default function WysiwygEditor({ value, onChange }) {
   const ref = useRef();

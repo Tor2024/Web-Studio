@@ -1,7 +1,11 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import Header from "../../components/Header";
 import { ExternalLink, ImageIcon, X, Calendar, Tag } from "lucide-react";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../src/context/LanguageContext";
+
+export const dynamic = 'force-dynamic';
 
 export default function PortfolioPage() {
   const [portfolioItems, setPortfolioItems] = useState([]);

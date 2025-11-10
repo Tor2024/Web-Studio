@@ -4,10 +4,10 @@
   "/api/portfolio/route": "app/api/portfolio/route.js",
   "/api/upload/route": "app/api/upload/route.js",
   "/api/uploads/route": "app/api/uploads/route.js",
-  "/about/page": "app/about/page.js",
   "/admin/page": "app/admin/page.js",
   "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js",
   "/news/page": "app/news/page.js",
   "/portfolio/page": "app/portfolio/page.js",
-  "/page": "app/page.js"
+  "/about/page": "app/about/page.js"
 }

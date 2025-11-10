@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useMutation } from "@tanstack/react-query";
 import Header from "../../components/Header";
 import { Send, Mail, MessageCircle, User, FileText } from "lucide-react";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguage } from "../../src/context/LanguageContext";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import WysiwygEditor from "./WysiwygEditor";
-import { useUpload } from "../utils/useUpload";
+import { useUpload } from "../src/utils/useUpload";
 
 const LANGS = ["en", "ru", "de"];
 
