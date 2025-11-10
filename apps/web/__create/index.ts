@@ -1,21 +1,13 @@
 import { AsyncLocalStorage } from 'node:async_hooks';
 import nodeConsole from 'node:console';
-import { skipCSRFCheck } from '@auth/core';
-import Credentials from '@auth/core/providers/credentials';
-import { authHandler, initAuthConfig } from '@hono/auth-js';
-
-import { hash, verify } from 'argon2';
 import { Hono } from 'hono';
-import { contextStorage, getContext } from 'hono/context-storage';
 import { cors } from 'hono/cors';
 import { proxy } from 'hono/proxy';
 import { requestId } from 'hono/request-id';
 import { createHonoServer } from 'react-router-hono-server/node';
 import { serializeError } from 'serialize-error';
-import ws from 'ws';
 
 import { getHTMLForErrorPage } from './get-html-for-error-page';
-import { isAuthAction } from './is-auth-action';
 import { API_BASENAME, api } from './route-builder';
 
 
@@ -45,8 +37,6 @@ app.use('*', (c, next) => {
   const requestId = c.get('requestId');
   return als.run({ requestId }, () => next());
 });
-
-app.use(contextStorage());
 
 app.onError((err, c) => {
   if (c.req.method !== 'GET') {
@@ -92,12 +82,7 @@ app.all('/integrations/:path{.+}', async (c, next) => {
   });
 });
 
-app.use('/api/auth/*', async (c, next) => {
-  if (isAuthAction(c.req.path)) {
-    return authHandler()(c, next);
-  }
-  return next();
-});
+
 
 // Test route
 app.get('/api/test', async (c) => {

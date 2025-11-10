@@ -86,7 +86,7 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 4000,
     hmr: {
-      overlay: false,
+      overlay: true,
     },
     warmup: {
       clientFiles: ['./src/app/**/*', './src/app/root.tsx', './src/app/routes.ts'],
