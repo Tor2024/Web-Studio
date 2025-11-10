@@ -1,4 +1,4 @@
-import { getNewsItems, addNewsItem, updateNewsItem, deleteNewsItem } from '../../../utils/fileStorage.js';
+import { getNewsItems, addNewsItem, updateNewsItem, deleteNewsItem } from '../../../../src/utils/fileStorage.js';
 
 export async function GET() {
   try {

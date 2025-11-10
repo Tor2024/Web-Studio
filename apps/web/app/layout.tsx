@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { LanguageProvider } from "../context/LanguageContext";
+import { LanguageProvider } from "../src/context/LanguageContext";
 
 const queryClient = new QueryClient({
   defaultOptions: {
