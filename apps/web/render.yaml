@@ -1,17 +1,11 @@
 services:
   - type: web
-    name: create-anything-web
+    name: web-studio
     env: node
-    buildCommand: cd apps/web && npm install && npm run build
-    startCommand: cd apps/web && npm run start
-    healthCheckPath: /api/news # Проверка работоспособности API
+    rootDir: apps/web
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /api/news
     envVars:
       - key: NODE_ENV
         value: production
-      # Опционально для клиентской части:
-      # - key: NEXT_PUBLIC_CREATE_BASE_URL
-      #   value: https://your-app.onrender.com
-      # - key: NEXT_PUBLIC_CREATE_HOST
-      #   value: your-app.onrender.com
-      # - key: CORS_ORIGINS
-      #   value: https://your-app.onrender.com
